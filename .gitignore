@@ -1,0 +1,72 @@
+# Private Vercel CLI credentials and project linking (never commit)
+.vercel-account/
+.vercel/
+**/.vercel/
+
+# Environment variables & secrets
+.env
+.env.*
+**/.env
+**/.env.*
+*.local
+**/*.local
+.dev.vars
+
+# Deliverables, reports, and audit archives
+deliverables/
+
+# Internal project briefs, agent instructions, and import notes (kept locally)
+PROMPT.md
+AGENTS.md
+README-IMPORT.md
+
+# Archives, compressed files, and backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bak
+*.backup
+nandha-traders-import.zip
+
+# Dependencies & package managers
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs & caches
+dist/
+dist-ssr/
+build/
+.output/
+.vinxi/
+.tanstack/
+.nitro/
+.cache/
+cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cloudflare / Wrangler
+.wrangler/
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
