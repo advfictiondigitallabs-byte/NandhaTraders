@@ -329,16 +329,20 @@ tailwind.config = { theme: { extend: {
 
 <!-- FOOTER -->
 <footer class="bg-forest-900 border-t border-white/10 text-white/70 text-sm">
-  <div class="max-w-7xl mx-auto px-5 pt-10 pb-28 md:pb-10 flex flex-col md:flex-row gap-4 items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="h-10 w-10 rounded-xl bg-white p-1 border border-white/20 flex items-center justify-center shrink-0">
+  <div class="max-w-7xl mx-auto px-5 pt-10 pb-28 md:pb-10 flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center justify-between">
+    <div class="flex items-start gap-4">
+      <div class="h-12 w-12 rounded-xl bg-white p-1 border border-white/20 flex items-center justify-center shrink-0 mt-0.5">
         <img src="logo-nandha-approved.png" alt="Nandha Traders logo" class="h-full w-full object-contain rounded-lg" width="1254" height="1254" loading="lazy" />
       </div>
-      <p class="text-xs sm:text-sm">© <span id="yr"></span> Nandha Traders · Perambalur, Tamil Nadu – 621110, India · Indian Roots. Global Connections. Quality in Every Grain.</p>
+      <div class="flex flex-col gap-1 text-xs sm:text-sm">
+        <p class="font-medium text-white/90">Nandha Traders, Perambalur, Tamil Nadu – 621110, India</p>
+        <p class="text-harvest-400 font-semibold">Since 2000 · 25+ years of experience</p>
+        <p class="text-white/60 italic">Indian Roots. Global Connections. Quality in Every Grain.</p>
+      </div>
     </div>
-    <div class="flex items-center gap-6 text-xs sm:text-sm">
-      <a href="mailto:nandhaatraders@gmail.com" class="hover:text-harvest-400 whitespace-nowrap"><i class="fa-regular fa-envelope mr-1.5"></i>nandhaatraders@gmail.com</a>
-      <a href="#top" class="hover:text-harvest-400 whitespace-nowrap">Back to top <i class="fa-solid fa-arrow-up ml-1"></i></a>
+    <div class="flex items-center gap-6 text-xs sm:text-sm shrink-0 self-start md:self-center">
+      <a href="mailto:nandhaatraders@gmail.com" class="hover:text-harvest-400 whitespace-nowrap transition"><i class="fa-regular fa-envelope mr-1.5"></i>nandhaatraders@gmail.com</a>
+      <a href="#top" class="hover:text-harvest-400 whitespace-nowrap transition">Back to top <i class="fa-solid fa-arrow-up ml-1"></i></a>
     </div>
   </div>
 </footer>
@@ -367,7 +371,6 @@ const why = [
   ['fa-handshake','Straightforward Trade','Clear pricing discussions and dependable trade relationships built over time.']
 ];
 document.getElementById('whyGrid').innerHTML = why.map(([i,t,d])=>`<div class="reveal bg-white border border-linen-200 rounded-3xl p-7 hover:border-harvest-500 hover:-translate-y-1 transition shadow-sm"><div class="w-12 h-12 rounded-xl bg-forest-800 text-harvest-400 flex items-center justify-center text-xl shadow-sm"><i class="fa-solid ${i}"></i></div><h3 class="mt-5 font-bold text-lg text-forest-800">${t}</h3><p class="mt-2 text-sm text-slateink/75 leading-relaxed">${d}</p></div>`).join('');
-document.getElementById('yr').textContent = new Date().getFullYear();
 
 const mb=document.getElementById('menuBtn'), mm=document.getElementById('mobileMenu'), ms=document.getElementById('menuScrim');
 const setMenu=open=>{
