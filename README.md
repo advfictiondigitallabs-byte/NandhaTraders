@@ -1,6 +1,6 @@
-# Nandha Traders — Wholesale Rice & Urad Dal Suppliers
+# Nandha Traders — Wholesale Rice Suppliers
 
-Official website and digital presence for **Nandha Traders**, trusted wholesale suppliers of premium rice and urad dal based in Perambalur, Tamil Nadu.
+Official website and digital presence for **Nandha Traders**, trusted wholesale suppliers of premium rice based in Perambalur, Tamil Nadu.
 
 - **Production URL**: [https://www.nandhatraders.com](https://www.nandhatraders.com)
 - **Vercel Deployment**: [https://nandha-traders.vercel.app](https://nandha-traders.vercel.app)
@@ -14,7 +14,7 @@ Official website and digital presence for **Nandha Traders**, trusted wholesale 
 
 The production website is a lightweight, high-performance static deliverable located in the `standalone-site/` folder:
 - **Root Document**: `standalone-site/index.html` serves as the entry point at domain root (`/`).
-- **Relative Assets**: All images (`hero.jpg`, `rice.jpg`, `urad-collection.png`, `warehouse.jpg`, `logo-vel.png`) and self-hosted typography (`fonts/fonts.css`, `fonts/*.woff2`) use strictly relative URLs.
+- **Relative Assets**: All images (`rice.jpg`, `warehouse.jpg`, `logo-nandha-approved.png`) and self-hosted typography (`fonts/fonts.css`, `fonts/*.woff2`) use strictly relative URLs.
 - **Zero Backend / No Database**: Enquiry generation operates entirely client-side via WhatsApp deep links (`https://wa.me/919344830263?text=...`) using `encodeURIComponent`. No visitor data is collected or stored.
 
 ### Static Vercel Configuration
